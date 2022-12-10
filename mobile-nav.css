@@ -1,0 +1,196 @@
+@media screen and (min-width: 600px) {
+  #galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img_1 img_2"
+      "img_3 img_4"
+      "img_5 img_6"
+      "img_7 img_8";
+  }
+
+  main {
+    padding-top: 80px !important;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+
+  nav ul li {
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "img_1 img_2 img_3"
+      "img_4 img_4 img_4"
+      "img_5 img_6 img_7"
+      "img_8 img_8 img_8";
+  }
+
+  #galeria .kep_div {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  #galeria .kep_div:hover {
+    filter: none;
+    -webkit-filter: none;
+  }
+
+  @keyframes nagyitas_img_1 {
+    from {
+      background-size: 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 200%;
+      background-position: -307px -36px;
+    }
+  }
+
+  @keyframes nagyitas_img_2 {
+    from {
+      background-size: 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 200%;
+      background-position: -317px -135px;
+    }
+  }
+
+  @keyframes nagyitas_img_3 {
+    from {
+      background-size: 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 200%;
+      background-position: top left;
+    }
+  }
+
+  @keyframes nagyitas_img_4 {
+    from {
+      background-size: 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 200%;
+      background-position: center -666px;
+    }
+  }
+
+  @keyframes nagyitas_img_5 {
+    from {
+      background-size: 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 200%;
+      background-position: -46px center;
+    }
+  }
+
+  @keyframes nagyitas_img_6 {
+    from {
+      background-size: 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 200%;
+      background-position:-37px -318px;
+    }
+  }
+
+  @keyframes nagyitas_img_7 {
+    from {
+      background-size: 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 200%;
+      background-position: top top;
+    }
+  }
+
+  @keyframes nagyitas_img_8 {
+    from {
+      background-size: 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 200%;
+      background-position: center -294px;
+    }
+  }
+}
+
+#galeria .kep_div#img_1:hover {
+  animation-name: nagyitas_img_1;
+  animation-duration: 0.1s;
+  background-size: 200%;
+  background-position: -307px -36px;
+}
+
+
+#galeria .kep_div#img_2:hover {
+    animation-name: nagyitas_img_2;
+    animation-duration: 0.1s;
+    background-size: 200%;
+    background-position: -317px -135px;
+  }
+  
+
+  #galeria .kep_div#img_3:hover {
+    animation-name: nagyitas_img_3;
+    animation-duration: 0.1s;
+    background-size: 200%;
+    background-position: top left;
+  }
+
+  #galeria .kep_div#img_4:hover {
+    animation-name: nagyitas_img_4;
+    animation-duration: 0.1s;
+    background-size: 200%;
+    background-position: center -666px;
+  }
+  
+  #galeria .kep_div#img_5:hover {
+    animation-name: nagyitas_img_5;
+    animation-duration: 0.1s;
+    background-size: 200%;
+    background-position: -46px center;
+  }
+
+  #galeria .kep_div#img_6:hover {
+    animation-name: nagyitas_img_6;
+    animation-duration: 0.1s;
+    background-size: 200%;
+    background-position:-37px -318px;
+  }
+
+  #galeria .kep_div#img_7:hover {
+    animation-name: nagyitas_img_7;
+    animation-duration: 0.1s;
+    background-size: 200%;
+    background-position: top center;
+  }
+
+  
+  #galeria .kep_div#img_8:hover {
+    animation-name: nagyitas_img_8;
+    animation-duration: 0.1s;
+    background-size: 200%;
+    background-position: center -294px;
+  }
+  
