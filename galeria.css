@@ -12,41 +12,81 @@
   background-position: center;
 }
 
-#img_1 {
+.img_container {
+  position: relative;
+}
+
+.img_container p {
+  display: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.img_container:hover p{
+color: red;
+position: absolute;
+display: block;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+
+#img_1_container {
   grid-area: img_1;
+}
+#img_2_container {
+  grid-area: img_2;
+}
+#img_3_container {
+  grid-area: img_3;
+}
+#img_4_container {
+  grid-area: img_4;
+}
+#img_5_container {
+  grid-area: img_5;
+}
+#img_6_container {
+  grid-area: img_6;
+}
+#img_7_container {
+  grid-area: img_7;
+}
+#img_8_container {
+  grid-area: img_8;
+}
+
+#img_1 {
   background-image: url("kepek/img_1.jpg");
 }
 
 #img_2 {
-  grid-area: img_2;
   background-image: url("kepek/img_2.jpg");
 }
 
 #img_3 {
-  grid-area: img_3;
   background-image: url("kepek/img_3.jpg");
 }
 
 #img_4 {
-  grid-area: img_4;
   background-image: url("kepek/img_4.jpg");
 }
 
 #img_5 {
-  grid-area: img_5;
   background-image: url("kepek/img_5.jpg");
 }
 
 #img_6 {
-  grid-area: img_6;
   background-image: url("kepek/img_6.jpg");
 }
 #img_7 {
-  grid-area: img_7;
   background-image: url("kepek/img_7.jpg");
 }
 
 #img_8 {
-  grid-area: img_8;
   background-image: url("kepek/img_8.jpg");
 }
